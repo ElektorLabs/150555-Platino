@@ -30,3 +30,5 @@ Platino supports the following MCUs:
 - ATmega1284
 
 Arduino compatible bootloaders for all supported processors (except ATmega48) are available too.
+
+For easy installation Platino is contained in a Board Package for the Arduino IDE, see https://github.com/ElektorLabs/Arduino
