@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14663,6 +14663,133 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
+<library name="150555-1-Platino-v1.4">
+<description>Generated from &lt;b&gt;150555-1-Platino-v1.4.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="ALPS_EC12E_SW_ALT2">
+<description>ALPS rotary encoder&lt;br&gt;
+EC12E series with push-on switch&lt;br&gt;
+Missing one body mount hole for special applications like Platino.</description>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-6.6" x2="6.2" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-6.6" x2="6.2" y2="6.6" width="0.127" layer="21"/>
+<wire x1="6.2" y1="6.6" x2="-6.2" y2="6.6" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="6.6" x2="-6.2" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.5" x2="2.6" y2="1.5" width="0.127" layer="21"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1"/>
+<pad name="B" x="2.5" y="-7.5" drill="1"/>
+<pad name="C" x="0" y="-7.5" drill="1"/>
+<pad name="D" x="-2.5" y="7" drill="1"/>
+<pad name="E" x="2.5" y="7" drill="1"/>
+<pad name="GND2" x="6.1" y="0" drill="2.2"/>
+<text x="-2.5" y="8.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.5" y="-9" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+</package>
+<package name="ALPS_EC12E_SW_ALT1">
+<description>ALPS rotary encoder&lt;br&gt;
+EC12E series with push-on switch&lt;br&gt;
+Missing one body mount hole for special applications like Platino.</description>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-6.6" x2="6.2" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-6.6" x2="6.2" y2="6.6" width="0.127" layer="21"/>
+<wire x1="6.2" y1="6.6" x2="-6.2" y2="6.6" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="6.6" x2="-6.2" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.5" x2="2.6" y2="1.5" width="0.127" layer="21"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1"/>
+<pad name="B" x="2.5" y="-7.5" drill="1"/>
+<pad name="C" x="0" y="-7.5" drill="1"/>
+<pad name="D" x="-2.5" y="7" drill="1"/>
+<pad name="E" x="2.5" y="7" drill="1"/>
+<text x="-2.5" y="8.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.5" y="-9" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+<pad name="GND1" x="-6.1" y="0" drill="2.2"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ENCODER">
+<circle x="0" y="0" radius="0.5679" width="0" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="4.1275" width="0.3048" layer="94"/>
+<wire x1="-2.54" y1="4.1275" x2="-0.9525" y2="1.905" width="0.3048" layer="94"/>
+<wire x1="-1.905" y1="1.905" x2="-2.54" y2="1.905" width="0.3048" layer="94"/>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="0" width="0.3048" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="4.1275" width="0.3048" layer="94"/>
+<wire x1="2.54" y1="4.1275" x2="4.1275" y2="1.905" width="0.3048" layer="94"/>
+<wire x1="3.175" y1="1.905" x2="2.54" y2="1.905" width="0.3048" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="0" width="0.3048" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="A" x="-2.54" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="B" x="2.54" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="C" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="-3.81" y="0" size="1.27" layer="95" rot="R90">&gt;PART</text>
+<text x="6.35" y="0" size="1.27" layer="96" rot="R90">&gt;VALUE</text>
+</symbol>
+<symbol name="TASTER">
+<wire x1="-2.54" y1="0" x2="-1.5875" y2="0" width="0.3048" layer="94"/>
+<wire x1="-1.5875" y1="0" x2="0.635" y2="1.5875" width="0.3048" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="0.635" y2="0" width="0.3048" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.3048" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="3.81" width="0.127" layer="94"/>
+<wire x1="-0.635" y1="3.81" x2="0.635" y2="3.81" width="0.127" layer="94"/>
+<wire x1="-0.635" y1="3.81" x2="-0.635" y2="3.4925" width="0.127" layer="94"/>
+<wire x1="0.635" y1="3.81" x2="0.635" y2="3.4925" width="0.127" layer="94"/>
+<pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<text x="-5.08" y="5.08" size="1.27" layer="95">&gt;PART</text>
+<text x="-5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="GEHAEUSEANSCHLUSS">
+<wire x1="0" y1="0" x2="0.9525" y2="0" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="0" x2="2.2225" y2="0" width="0.254" layer="94"/>
+<wire x1="2.8575" y1="0" x2="3.4925" y2="0" width="0.254" layer="94"/>
+<wire x1="4.1275" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="G" x="0" y="0" visible="pad" length="point" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="EC12E_SW_ALT1" prefix="SW">
+<description>ALPS rotary Encoder EC12E series with switch, Specialty for Platino</description>
+<gates>
+<gate name="G$1" symbol="ENCODER" x="-10.16" y="-2.54" addlevel="always"/>
+<gate name="G$2" symbol="TASTER" x="10.16" y="3.81" addlevel="always"/>
+<gate name="G$3" symbol="GEHAEUSEANSCHLUSS" x="10.16" y="-6.35" addlevel="request"/>
+</gates>
+<devices>
+<device name="-A" package="ALPS_EC12E_SW_ALT1">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$2" pin="1" pad="D"/>
+<connect gate="G$2" pin="2" pad="E"/>
+<connect gate="G$3" pin="G" pad="GND1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="EC12E2424407" constant="no"/>
+<attribute name="OC_FARNELL" value="1520813" constant="no"/>
+<attribute name="OC_NEWARK" value="74M1068" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-B" package="ALPS_EC12E_SW_ALT2">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$2" pin="1" pad="D"/>
+<connect gate="G$2" pin="2" pad="E"/>
+<connect gate="G$3" pin="G" pad="GND2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="CPV"/>
@@ -14745,12 +14872,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="S3C" library="000_cpv" deviceset="PUSHBUTTON_MULTIMEC" device="" value="3FTL6"/>
 <part name="S6C" library="000_cpv" deviceset="EC12E_SW" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="S5B" library="000_cpv" deviceset="EC12E_SW" device=""/>
+<part name="S5B" library="150555-1-Platino-v1.4" deviceset="EC12E_SW_ALT1" device="-B"/>
 <part name="S2B" library="000_cpv" deviceset="PUSHBUTTON_MULTIMEC" device="" value="3FTL6"/>
 <part name="S1B" library="000_cpv" deviceset="PUSHBUTTON_MULTIMEC" device="" value="3FTL6"/>
 <part name="S4B" library="000_cpv" deviceset="PUSHBUTTON_MULTIMEC" device="" value="3FTL6"/>
 <part name="S3B" library="000_cpv" deviceset="PUSHBUTTON_MULTIMEC" device="" value="3FTL6"/>
-<part name="S6B" library="000_cpv" deviceset="EC12E_SW" device=""/>
+<part name="S6B" library="150555-1-Platino-v1.4" deviceset="EC12E_SW_ALT1" device="-B"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="K10" library="elpp-tht-v1.3" deviceset="K-HEADER-MALE-1X5-" device="V"/>
 <part name="K11" library="elpp-tht-v1.3" deviceset="K-HEADER-MALE-1X5-" device="V"/>
@@ -15433,8 +15560,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="167.64" y="11.43" size="2.54" layer="97">LCD, buzzer</text>
 <text x="99.06" y="157.48" size="2.54" layer="97">CONFIGURE SOLDER JUMPERS FIRST</text>
 <text x="121.92" y="12.7" size="6.4516" layer="97">PLATINO</text>
-<text x="60.96" y="127" size="1.778" layer="97">K1</text>
-<text x="104.14" y="127" size="1.778" layer="97">K2</text>
+<text x="60.96" y="127" size="1.778" layer="97">E1</text>
+<text x="104.14" y="127" size="1.778" layer="97">E2</text>
 <text x="226.06" y="109.22" size="1.778" layer="97">B</text>
 <text x="226.06" y="93.98" size="1.778" layer="97">B</text>
 <text x="218.44" y="132.08" size="1.778" layer="97">B</text>
@@ -15453,6 +15580,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="226.06" y="101.6" size="1.778" layer="97">C</text>
 <text x="218.44" y="142.24" size="1.778" layer="97">D</text>
 <text x="218.44" y="160.02" size="1.778" layer="97">D</text>
+<text x="68.58" y="144.78" size="2.54" layer="97">Ex = Encoder x</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -15652,7 +15780,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="PART" x="88.9" y="59.69" size="1.016" layer="95" rot="MR0"/>
 </instance>
 <instance part="S5B" gate="G$3" x="33.02" y="63.5"/>
-<instance part="S5B" gate="G$4" x="33.02" y="60.96"/>
 <instance part="S2B" gate="G$1" x="68.58" y="63.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="71.755" y="59.055" size="1.016" layer="95"/>
 <attribute name="VALUE" x="71.12" y="57.785" size="0.8128" layer="96"/>
@@ -15677,7 +15804,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="PART" x="78.105" y="59.69" size="1.016" layer="95"/>
 </instance>
 <instance part="S6B" gate="G$3" x="33.02" y="58.42"/>
-<instance part="S6B" gate="G$4" x="33.02" y="55.88"/>
 <instance part="GND21" gate="1" x="53.34" y="53.34" smashed="yes">
 <attribute name="VALUE" x="51.435" y="50.8" size="1.778" layer="96"/>
 </instance>
@@ -16005,12 +16131,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 </segment>
 <segment>
 <wire x1="33.02" y1="55.88" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="58.42" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="60.96" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="S6B" gate="G$4" pin="G"/>
+<wire x1="33.02" y1="58.42" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <pinref part="S6B" gate="G$3" pin="G"/>
-<pinref part="S5B" gate="G$4" pin="G"/>
 <pinref part="S5B" gate="G$3" pin="G"/>
 </segment>
 <segment>
