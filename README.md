@@ -20,7 +20,7 @@ Platino supports the following MCUs:
 - ATmega8
 - ATmega16
 - ATmega32
-- ATmega48
+- ATmega48 (not supported in Arduino IDE)
 - ATmega88
 - ATmega164
 - ATmega168
